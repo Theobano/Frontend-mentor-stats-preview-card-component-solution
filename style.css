@@ -32,9 +32,9 @@ body {
 }
 
 /* Center the card */
-.flex-center{
-    flex: 1;
-    display: flex;
+.flex-center {
+  flex: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -49,21 +49,21 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  max-width: 800px;
+  max-width: 1000px;
   overflow: hidden;
 }
 
 /* Style the header text */
 .card-main-content {
-  padding: 2em;
+  padding: 5em;
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 3em;
 }
 
 .intro h1 {
   color: var(--main-heading-stats);
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
   margin: 0;
 }
@@ -74,7 +74,7 @@ body {
 
 .intro p {
   color: var(--main-paragraph);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 25px;
   font-weight: 400;
   margin-bottom: 0;
@@ -118,7 +118,7 @@ body {
 
 .header-overlay {
   background-color: var(--accent);
-  opacity: 0.6;
+  opacity: 0.5;
   height: 100%;
   width: 100%;
 }
@@ -140,15 +140,21 @@ body {
   }
   .card-main-content {
     text-align: center;
+    padding: 3em 2em;
   }
 
-  .intro p{
+  .intro h1 {
+    font-size: 30px;
+  }
+
+  .intro p {
     font-size: 16px;
   }
 
   .stats {
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 2em;
     align-items: center;
     justify-content: center;
   }
@@ -156,11 +162,11 @@ body {
     align-items: center;
     justify-content: center;
   }
-    .stats > div > span:first-child {
-        font-size: 24px;
-    }
+  .stats > div > span:first-child {
+    font-size: 24px;
+  }
 
-    .stats > div > span:last-child {
-        font-size: 14px;
-    }
+  .stats > div > span:last-child {
+    font-size: 14px;
+  }
 }
